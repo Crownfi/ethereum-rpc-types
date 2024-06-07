@@ -1,0 +1,21 @@
+{
+	"name": "@crownfi/ethereum-rpc-types",
+	"version": "0.1.0",
+	"main": "dist/index.js",
+	"license": "MIT",
+	"scripts": {
+		"codegen": "node --loader ts-node/esm scripts/codegen.js",
+		"build": "tsc"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5",
+		"@types/node": "^20.14.2",
+		"json-schema-to-typescript": "^14.0.5"
+	},
+	"type": "module",
+	"files": [
+		"dist"
+	]
+}

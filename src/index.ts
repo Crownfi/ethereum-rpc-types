@@ -1463,7 +1463,7 @@ export interface EthereumProviderEventMap {
 	message: { type: string, data: any }
 }
 
-interface EthereumProvider {
+export interface EthereumProvider {
 	request<M extends keyof EthereumRpcMethodMap>(request: {
 		method: M,
 		params: EthereumRpcMethodMap[M]["params"]

@@ -1450,7 +1450,7 @@ export interface SyncingProgress {
 	highestBlock?: HexEncodedUnsignedInteger84;
 }
 
-interface EthereumProviderRpcError extends Error {
+export interface EthereumProviderRpcError extends Error {
   message: string;
   code: number;
   data?: any;

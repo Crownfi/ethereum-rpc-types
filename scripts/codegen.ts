@@ -103,7 +103,7 @@ let outString = await compile(
 	{additionalProperties: false, unknownAny: false, bannerComment: AUTOGEN_DISCLAIMER, style: {useTabs: true}}
 );
 outString += `
-interface EthereumProviderRpcError extends Error {
+export interface EthereumProviderRpcError extends Error {
   message: string;
   code: number;
   data?: any;
